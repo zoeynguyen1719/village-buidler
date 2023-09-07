@@ -189,7 +189,7 @@ module overmind::village_builder {
         Village struct to store village data. To be owned by each village NFT.
     */
     struct Village has store, drop, copy, key {
-        // Village name - provided by the village creator
+        Village name - provided by the village creator
         name: String,
         // Village description - provided by the village creator
         description: String,
@@ -243,7 +243,7 @@ module overmind::village_builder {
         @param admin - signer representing the admin
     */
     fun init_module(admin: &signer) {
-        
+        admin = 
     }
 
     /*
@@ -255,8 +255,8 @@ module overmind::village_builder {
     */
     public entry fun build_village(
         village_builder: &signer,
-        name: String,
-        description: String,
+        name: string,
+        description: string,
     ) acquires State {
 
     }
